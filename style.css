@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  border-bottom: 3px solid rgb(255, 152, 152);
+  box-shadow: 4px 2px 8px #cfcfcf;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 152, 152);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 5px solid white;
+}
+
+h2 {
+  padding-top: 5px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.highlight {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.highlight-pics img {
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 4px 2px 8px #a1a1a1;
+  margin: 20px;
+}
+
+.models {
+  margin-top: 3rem;
+}
+
+.main-content {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.model-pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.model-pics img {
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  margin-top: 30px;
+  box-shadow: 4px 2px 8px #a1a1a1;
+  border-radius: 50%;
+}
+
+.figcaption-title {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.model-pics figcaption li {
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.figure {
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+  margin-left: 80px;
+}
+
+.chibi {
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.kigurumi {
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+  margin: 0px 40px;
+}
