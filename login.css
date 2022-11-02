@@ -7,25 +7,37 @@
 }
 
 header {
-  display: block;
-  width: 100vw;
-  position: relative;
-}
-
-body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-#login {
-  height: 60vh;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-}
-
-#card-login {
-  display: flex;
+  border-bottom: 3px solid rgb(255, 152, 152);
+  box-shadow: 4px 2px 8px #cfcfcf;
+  left: 0;
+  right: 0;
   justify-content: center;
-  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 152, 152);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 5px solid white;
+}
+
+h2 {
+  padding-top: 5px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+#cadastrar {
+  background-color: rgb(255, 152, 152);
+}
+
+#logar {
+  background-color: rgb(255, 152, 152);
 }

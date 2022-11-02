@@ -17,17 +17,22 @@ header {
   background-color: rgb(255, 152, 152);
 }
 
-h1 {
+#title {
   font-size: 2.5rem;
   text-align: center;
   border-bottom: 5px solid white;
+  font-weight: 700;
 }
 
-h2 {
-  padding-top: 5px;
+#subtitle {
   font-weight: normal;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+nav {
+  text-align: center;
 }
 
 .carousel {
@@ -55,6 +60,12 @@ h2 {
   margin-top: 3rem;
 }
 
+#models-title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
 .main-content {
   width: 80%;
   margin: auto;
@@ -65,57 +76,17 @@ h2 {
   margin-bottom: 5rem;
 }
 
-h3 {
+p {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.model-pics {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.model-pics img {
-  max-width: 400px;
-  min-width: 400px;
-  max-height: 400px;
-  min-height: 400px;
-  margin-top: 30px;
-  box-shadow: 4px 2px 8px #a1a1a1;
-  border-radius: 50%;
-}
-
-.figcaption-title {
-  font-size: 30px;
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 10%;
+  padding: 1.2rem 0;
   text-align: center;
-  border-bottom: 2px solid black;
-}
-
-.model-pics figcaption li {
-  padding-top: 10px;
-  text-align: center;
-  list-style: none;
-}
-
-.figure {
-  font-size: 18px;
-  text-align: center;
-  list-style: none;
-  margin-left: 80px;
-}
-
-.chibi {
-  font-size: 18px;
-  text-align: center;
-  list-style: none;
-  margin-right: 80px;
-}
-
-.kigurumi {
-  font-size: 18px;
-  text-align: center;
-  list-style: none;
-  margin: 0px 40px;
 }
