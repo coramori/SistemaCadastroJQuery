@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: block;
+  width: 100vw;
+  position: relative;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#login {
+  height: 60vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+#card-login {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
