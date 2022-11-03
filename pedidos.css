@@ -1,0 +1,48 @@
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+main {
+  margin-top: 3rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+p {
+  width: 50%;
+}
+
+form {
+  width: 40%;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 0px #cfcfcf;
+  margin-bottom: 3rem;
+}
+
+#exampleFormControlSelect1 {
+  cursor: pointer;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+#enviar {
+  background-color: rgb(255, 152, 152);
+}
+
+.send-button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: end;
+}

@@ -1,5 +1,4 @@
 const usuario = {
-  nome: '',
   login: '',
   senha: '',
 };
@@ -28,7 +27,7 @@ const getPagina = (page, target) => {
 const realizaLogin = (user) => {
   localStorage.setItem(LOGADO, 'true');
   localStorage.setItem(USER, JSON.stringify(user));
-  window.location.href = 'dashboard.html';
+  window.location.href = 'index.html';
 };
 
 const realizaLogoff = () => {

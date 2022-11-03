@@ -22,6 +22,7 @@ header {
   text-align: center;
   border-bottom: 5px solid white;
   font-weight: 700;
+  text-shadow: 2px 2px #ffffff;
 }
 
 #subtitle {
@@ -29,10 +30,17 @@ header {
   text-align: center;
   font-size: 1.9rem;
   font-weight: 400;
+  text-shadow: 1px 1px #ffffff;
 }
 
-nav {
-  text-align: center;
+#nav-pills a {
+  color: black;
+  margin: 0px 2px;
+}
+
+#nav-link {
+  background-color: rgb(255, 152, 152) !important;
+  color: black;
 }
 
 .carousel {
@@ -76,6 +84,10 @@ nav {
   margin-bottom: 5rem;
 }
 
+.card {
+  box-shadow: 4px 2px 8px #dbdbdb;
+}
+
 p {
   text-align: center;
   font-size: 1.1rem;
@@ -85,8 +97,6 @@ p {
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-thickness: 10%;
   padding: 1.2rem 0;
   text-align: center;
 }

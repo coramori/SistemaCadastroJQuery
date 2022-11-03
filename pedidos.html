@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Coramori Art Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pedidos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,7 +19,6 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <!-- Header -->
@@ -55,7 +56,10 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul id="nav-pills" class="nav nav-pills">
+          <ul
+            id="nav-pills"
+            class="nav nav-pills mb-2 mb-lg-0 justify-content-center"
+          >
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
@@ -86,41 +90,60 @@
         </div>
       </div>
     </nav>
-    <!-- Login Card -->
+    <!-- Main -->
     <main>
-      <section id="form-login">
-        <div class="container col-4">
-          <fieldset>
-            <form onsubmit="return false;">
-              <div class="form-group row">
-                <label for="login">Login</label>
-                <input
-                  type="text"
-                  name="login"
-                  class="form-control"
-                  id="login"
-                  placeholder="Usuário"
-                />
-              </div>
-              <div class="form-group row">
-                <label for="senha">Senha</label>
-                <input
-                  type="password"
-                  name="senha"
-                  id="senha"
-                  class="form-control"
-                  placeholder="*********"
-                />
-              </div>
-              <div id="login-button" class="form-group row my-2">
-                <button id="logar" class="btn btn-block">Logar</button>
-              </div>
-            </form>
-          </fieldset>
+      <p class="title">Cadastrar Pedido</p>
+      <p>
+        Preencha os campos com as informações solicitadas para cadastrar seu
+        pedido.
+      </p>
+      <!-- Form -->
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email para contato</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="nome@exemplo.com"
+          />
         </div>
-      </section>
-    </main>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Modelo</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="">Selecione o modelo</option>
+            <option>Figure</option>
+            <option>Chibi</option>
+            <option>Miniatura Kigurumi com Base</option>
+            <option>Miniatura Kigurumi em Chaveiro</option>
+          </select>
+        </div>
 
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Nome do personagem</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            placeholder="Informe o nome do personagem."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Descrição</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Descreva os detalhes da sua peça."
+          ></textarea>
+        </div>
+        <div class="send-button">
+          <button id="enviar" class="btn btn-block">Enviar</button>
+        </div>
+      </form>
+      <!-- Tabela -->
+      <p class="title">Meus Pedidos</p>
+      <!-- Colocar a tabela com o CRUD dos pedidos feitos -->
+    </main>
     <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -133,20 +156,7 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <!-- Scritps -->
+    <!-- Scripts -->
     <script src="main.js"></script>
-    <script>
-      $(document).ready(() => {
-        $('#logar').click((e) => {
-          usuario.login = $('#login').val();
-          usuario.senha = $('#senha').val();
-          console.log(usuario);
-          if (usuario.login !== '' && usuario.senha !== '') {
-            realizaLogin(usuario);
-            console.log(`Usuário ${usuario.login} está logado`);
-          }
-        });
-      });
-    </script>
   </body>
 </html>
