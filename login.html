@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Coramori Art Studio | Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -78,7 +78,9 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="login.html">Login</a></li>
                 <li>
-                  <a class="dropdown-item" href="pedidos.html">Pedidos</a>
+                  <a class="dropdown-item" href="#" onclick="verificaAcesso()"
+                    >Pedidos</a
+                  >
                 </li>
               </ul>
             </li>
@@ -135,6 +137,7 @@
     ></script>
     <!-- Scritps -->
     <script src="main.js"></script>
+    <script src="pedidos.js"></script>
     <script>
       $(document).ready(() => {
         $('#logar').click((e) => {

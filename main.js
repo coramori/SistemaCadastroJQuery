@@ -27,7 +27,7 @@ const getPagina = (page, target) => {
 const realizaLogin = (user) => {
   localStorage.setItem(LOGADO, 'true');
   localStorage.setItem(USER, JSON.stringify(user));
-  window.location.href = 'index.html';
+  window.location.href = 'pedidos.html';
 };
 
 const realizaLogoff = () => {
