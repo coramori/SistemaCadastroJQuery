@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coramori Art Studio</title>
+    <title>Coramori Art Studio | Pedidos</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pedidos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,25 +37,10 @@
     </header>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg"
+      class="navbar"
       style="background-color: rgb(255, 241, 241)"
     >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
+      <div class="container-fluid justify-content-center">
           <ul
             id="nav-pills"
             class="nav nav-pills mb-2 mb-lg-0 justify-content-center"
@@ -118,8 +103,8 @@
             <option value="">Selecione o modelo</option>
             <option>Figure</option>
             <option>Chibi</option>
-            <option>Miniatura Kigurumi com Base</option>
-            <option>Miniatura Kigurumi em Chaveiro</option>
+            <option>Kigurumi com Base</option>
+            <option>Kigurumi em Chaveiro</option>
           </select>
         </div>
         <div class="form-group">
@@ -147,12 +132,12 @@
       </form>
       <!-- Tabela -->
       <p class="title">Meus Pedidos</p>
-      <table class="table">
+      <table class="table" id="tabela">
         <thead>
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Modelo</th>
-            <th scope="col">Nome do Personagem</th>
+            <th scope="col">Personagem</th>
             <th scope="col">Descrição</th>
           </tr>
         </thead>

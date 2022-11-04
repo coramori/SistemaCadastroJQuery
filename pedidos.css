@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .title {
   font-size: 1.6rem;
   font-weight: bold;
@@ -25,7 +29,7 @@ form {
   margin-bottom: 3rem;
 }
 
-#exampleFormControlSelect1 {
+#modelo {
   cursor: pointer;
 }
 
@@ -45,4 +49,30 @@ label {
   margin-top: 15px;
   display: flex;
   justify-content: end;
+}
+
+.table {
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 0px #cfcfcf;
+  margin-bottom: 3rem;
+}
+
+#tabela {
+  background-color: rgb(255, 152, 152);
+  overflow: hidden;
+  margin-top: 1rem;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 0px #cfcfcf;
+  margin-bottom: 3rem;
+}
+
+#tabela th {
+  padding-left: 30px;
+}
+
+#tabela td {
+  background-color: white;
+  color: black;
+  padding: 9px 30px 9px 30px;
 }

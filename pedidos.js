@@ -55,7 +55,9 @@ const salvarPedido = () => {
   };
 
   if (id.val() !== '') {
-    var i = listaPedidos.findIndex((pedido) => pedido.id === id.val());
+    var i = listaPedidos.findIndex(
+      (pedido) => Number(pedido.id) === Number(id.val())
+    );
     pedido.id = id.val();
     listaPedidos.splice(i, 1, pedido);
   } else {
