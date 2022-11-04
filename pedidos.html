@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="main.js"></script>
-
-    <script>const verificaLogin = () => {
-      if (localStorage.getItem(LOGADO) == 'false') {
-        getPagina(page, target)
-      }    
-    };</script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -107,18 +100,20 @@
       </p>
       <!-- Form -->
       <form>
+          <input type="hidden" name="id" id="id">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Email para contato</label>
+          <label for="email">Email para contato</label>
           <input
             type="email"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="email"
             placeholder="nome@exemplo.com"
+            required
           />
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Modelo</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <label for="modelo">Modelo</label>
+          <select class="form-control" id="modelo">
             <option value="">Selecione o modelo</option>
             <option>Figure</option>
             <option>Chibi</option>
@@ -128,24 +123,26 @@
         </div>
 
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Nome do personagem</label>
+          <label for="nome-personagem">Nome do personagem</label>
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="nome-personagem"
             placeholder="Informe o nome do personagem."
+            required
           ></textarea>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Descrição</label>
+          <label for="descricao">Descrição</label>
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="descricao"
             rows="3"
             placeholder="Descreva os detalhes da sua peça."
+            required
           ></textarea>
         </div>
         <div class="send-button">
-          <button id="enviar" class="btn btn-block">Enviar</button>
+          <button id="salvar" class="btn btn-block">Enviar</button>
         </div>
       </form>
       <!-- Tabela -->
@@ -154,13 +151,13 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">ID</th>
             <th scope="col">Modelo</th>
             <th scope="col">Nome do Personagem</th>
             <th scope="col">Descrição</th>
           </tr>
         </thead>
-        <tbody class="text-primary" ></tbody>
+        <tbody class="text-primary" id="lista-pedidos"></tbody>
       </table>
     </main>
     <!-- JQuery -->
@@ -179,5 +176,19 @@
     <script src="main.js"></script>
     <script src="storage.js"></script>
     <script src="pedidos.js"></script>
+    <!-- <script>
+      $(document).ready(() => {
+        $('#salvar').click((e) => {
+          pedido.modelo = $('#modelo').val();
+          pedido.nomePersonagem = $('#nomePersonagem').val();
+          pedido.descricao = $('#descricao').val();
+          console.log(pedido);
+          // if (usuario.login !== '' && usuario.senha !== '') {
+          //   realizaLogin(usuario);
+          //   console.log(Usuário ${usuario.login} está logado);
+          // }
+        });
+      });
+    </script> -->
   </body>
 </html>
